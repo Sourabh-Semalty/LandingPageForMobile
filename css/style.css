@@ -272,7 +272,7 @@ form button {
     border-bottom: none
 }
 .scroll-fixed-nav {
-    background-color: rgba(255, 255, 255, 0.95);
+    background-color: #00335e;
     padding: 10px 0;
     -moz-box-shadow: 0 2px 8px 0 rgba(31, 31, 31, 0.1);
     -webkit-box-shadow: 0 2px 8px 0 rgba(31, 31, 31, 0.1);
@@ -301,10 +301,17 @@ form button {
     text-transform: uppercase;
 }
 .scroll-fixed-nav .navbar-nav > li > a {
-    color: #263246 !important
+    color: #fff;
 }
+.mt-n5 {
+    margmt-n5in-top: -1rem;
+}
+@media(max-width: 768px ) {
+    .mt-n5 {
+        margin-top: 1rem;
 
-
+    }
+}
 
 /* 04. HEADER 1 STYLES
 -------------------------------------------------*/
