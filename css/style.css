@@ -1,28 +1,156 @@
-
-
 * {
     margin: 0;
     padding: 0;
 }
+
 body {
     font-family: 'Lato', sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     background: #191c21;
 }
+
 a,
 button {
     -webkit-transition: all .3s;
     transition: all .3s;
 }
+
 a:hover,
 a:focus {
     text-decoration: none;
     outline: none;
 }
+
 ul li {
     list-style: none;
 }
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.counter-icons {
+    font-size: 32px;
+    color: #f0504c
+}
+
+
+/*-=-=-=-=-=-=-=-=-=-=-=- */
+
+
+/* Column Grids */
+
+
+/*-=-=-=-=-=-=-=-=-=-=-=- */
+
+.col_half {
+    width: 49%;
+}
+
+.col_third {
+    width: 32%;
+}
+
+.col_fourth {
+    width: 23.5%;
+}
+
+.col_fifth {
+    width: 18.4%;
+}
+
+.col_sixth {
+    width: 15%;
+}
+
+.col_three_fourth {
+    width: 74.5%;
+}
+
+.col_twothird {
+    width: 66%;
+}
+
+.col_half,
+.col_third,
+.col_twothird,
+.col_fourth,
+.col_three_fourth,
+.col_fifth {
+    position: relative;
+    display: inline;
+    display: inline-block;
+    float: left;
+    margin-right: 2%;
+    margin-bottom: 20px;
+}
+
+.end {
+    margin-right: 0 !important;
+}
+
+
+/* Column Grids End */
+
+.wrapper {
+    width: 980px;
+    margin: 30px auto;
+    position: relative;
+}
+
+.counter {
+    background-color: #ffffff;
+    padding: 20px 0;
+    border-radius: 5px;
+}
+
+.count-title {
+    font-size: 40px;
+    font-weight: normal;
+    margin-top: 10px;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+.count-text {
+    font-size: 13px;
+    font-weight: normal;
+    margin-top: 10px;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+.fa-2x {
+    margin: 0 auto;
+    float: none;
+    display: table;
+    color: #4ad1e5;
+}
+
+.dropdown-menu-name {
+    position: relative;
+}
+
+.dropdown-menu-items {
+    position: absolute;
+    top: 60px;
+    width: 100px;
+    background-color: #fff;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+    height: 0;
+    overflow: hidden;
+}
+
+.dropdown-menu-items li a {
+    display: block;
+    text-align: center;
+    padding: 0.8rem 0rem;
+}
+
 input[type="email"],
 input[type="text"],
 input[type="password"],
@@ -32,6 +160,7 @@ textarea:focus,
 button:focus {
     outline: none;
 }
+
 form input,
 form button {
     padding: 15px 30px;
@@ -39,6 +168,7 @@ form button {
     font-size: 16px;
     width: auto;
 }
+
 form input[type="text"],
 form input[type="password"],
 form input[type="email"] {
@@ -47,16 +177,19 @@ form input[type="email"] {
     font-weight: 400;
     font-size: 14px;
 }
+
 form input[type="text"]:focus,
 form input[type="password"]:focus,
 form input[type="email"]:focus {
     color: #222;
 }
+
 form input[type="submit"],
 form button {
     -webkit-transition: all .3s;
     transition: all .3s;
 }
+
 #scrollUp {
     bottom: 20px;
     right: 20px;
@@ -72,15 +205,19 @@ form button {
     -webkit-transition: all 0.3s;
     transition: all 0.3s;
 }
+
 #scrollUp:hover {
     color: #fff;
 }
+
 .light-bg {
     background: #fff;
 }
+
 .light-gry-bg {
     background: #f6f7f8;
 }
+
 .v-align-children {
     display: -webkit-flex;
     display: -moz-flex;
@@ -93,6 +230,7 @@ form button {
     flex-direction: row;
     -webkit-flex-direction: row;
 }
+
 .top-align-children {
     display: -webkit-flex;
     display: -moz-flex;
@@ -105,17 +243,21 @@ form button {
     flex-direction: row;
     -webkit-flex-direction: row;
 }
+
 .img-responsive {
     margin: auto;
 }
+
 .parallax {
     margin-top: -1px;
 }
+
 .btn-app-store,
 .btn-play-store {
     display: inline-block;
     margin: 0 10px;
 }
+
 .btn-app-store,
 .btn-play-store {
     background: #fff;
@@ -126,11 +268,13 @@ form button {
     padding-right: 20px;
     border-radius: 4px;
 }
+
 .btn-app-store:hover,
 .btn-play-store:hover {
     background: #ebedef;
     color: #222;
 }
+
 .btn-app-store i,
 .btn-play-store i {
     font-size: 36px;
@@ -138,6 +282,7 @@ form button {
     left: 10px;
     top: 12px;
 }
+
 .btn-app-store .small,
 .btn-play-store .small {
     display: block;
@@ -147,6 +292,7 @@ form button {
     margin-bottom: 2px;
     margin-top: 5px;
 }
+
 .btn-app-store .big,
 .btn-play-store .big {
     display: block;
@@ -155,6 +301,7 @@ form button {
     line-height: 21px;
     font-weight: 600;
 }
+
 .btn-2-play-store,
 .btn-2-app-store {
     color: #f6f7f8;
@@ -165,22 +312,24 @@ form button {
     border: 2px solid #FFF;
     border-radius: 20px;
 }
+
 .btn-2-play-store:hover,
 .btn-2-app-store:hover {
     color: #f6f7f8;
 }
+
 .btn-2-play-store i,
 .btn-2-app-store i {
     display: block;
     font-size: 30px;
     margin-bottom: 8px;
 }
+
 .btn-2-play-store span,
 .btn-2-app-store span {
     display: block;
     font-size: 12px;
 }
-
 
 
 /* 02. PRELOADER STYLES
@@ -196,6 +345,7 @@ form button {
     width: 100%;
     overflow: hidden !important
 }
+
 .spinner {
     position: absolute;
     top: 50%;
@@ -206,6 +356,7 @@ form button {
     -webkit-animation: sk-rotate 2.0s infinite linear;
     animation: sk-rotate 2.0s infinite linear;
 }
+
 .dot1,
 .dot2 {
     width: 60%;
@@ -217,33 +368,40 @@ form button {
     -webkit-animation: sk-bounce 2.0s infinite ease-in-out;
     animation: sk-bounce 2.0s infinite ease-in-out;
 }
+
 .dot2 {
     top: auto;
     bottom: 0;
     -webkit-animation-delay: -1.0s;
     animation-delay: -1.0s;
 }
+
 @-webkit-keyframes sk-rotate {
     100% {
         -webkit-transform: rotate(360deg)
     }
 }
+
 @keyframes sk-rotate {
     100% {
         transform: rotate(360deg);
         -webkit-transform: rotate(360deg)
     }
 }
+
 @-webkit-keyframes sk-bounce {
-    0%, 100% {
+    0%,
+    100% {
         -webkit-transform: scale(0.0)
     }
     50% {
         -webkit-transform: scale(1.0)
     }
 }
+
 @keyframes sk-bounce {
-    0%, 100% {
+    0%,
+    100% {
         transform: scale(0.0);
         -webkit-transform: scale(0.0);
     }
@@ -252,7 +410,6 @@ form button {
         -webkit-transform: scale(1.0);
     }
 }
-
 
 
 /* 03. NAV MENU STYLES
@@ -271,6 +428,7 @@ form button {
     margin-bottom: 0;
     border-bottom: none
 }
+
 .scroll-fixed-nav {
     background-color: #00335e;
     padding: 10px 0;
@@ -278,21 +436,31 @@ form button {
     -webkit-box-shadow: 0 2px 8px 0 rgba(31, 31, 31, 0.1);
     box-shadow: 0 2px 8px 0 rgba(31, 31, 31, 0.1)
 }
+
 .logo.navbar-brand {
     padding: 5px;
 }
+
 .scroll-fixed-nav .logo-white {
     display: none
 }
+
 .scroll-fixed-nav .logo-black {
     display: block !important
 }
+
 .scroll-nav .logo-black {
     display: none
 }
-.navbar-nav.navbar-right:last-child {
-    margin-right: 0
+
+.navbar-nav {
+    margin-top: 1rem;
 }
+
+.navbar-nav.navbar-right:last-child {
+    margin-right: 0;
+}
+
 .navbar-default .navbar-nav>li>a {
     color: #f6f7f8;
     font-size: 12px;
@@ -300,18 +468,21 @@ form button {
     letter-spacing: 0.5px;
     text-transform: uppercase;
 }
-.scroll-fixed-nav .navbar-nav > li > a {
+
+.scroll-fixed-nav .navbar-nav>li>a {
     color: #fff;
 }
+
 .mt-n5 {
-    margmt-n5in-top: -1rem;
+    margin-top: -1rem;
 }
-@media(max-width: 768px ) {
+
+@media(max-width: 768px) {
     .mt-n5 {
         margin-top: 1rem;
-
     }
 }
+
 
 /* 04. HEADER 1 STYLES
 -------------------------------------------------*/
@@ -321,32 +492,37 @@ form button {
     margin-top: 260px;
     margin-bottom: 160px;
 }
+
 .intro-text-1 img {
     margin-bottom: 30px;
 }
+
 .intro-text-1 h1 {
     color: #fff;
     font-weight: 300;
     font-size: 55px;
 }
+
 .intro-text-1 p {
     color: #b6b9bf;
     font-size: 18px;
     line-height: 30px;
 }
+
 .intro-text-1 .download-cta {
     margin-top: 90px;
 }
+
 .download-cta .or {
     font-size: 14px;
     margin: 0 15px;
     color: #929292;
 }
+
 .download-cta .link {
     font-size: 16px;
     color: #e5eeff;
 }
-
 
 
 /* 05. HEADER 2 STYLES
@@ -355,6 +531,7 @@ form button {
 .header-section-2 {
     padding: 180px 0 110px 0;
 }
+
 .intro-text-2 h1 {
     color: #fff;
     font-weight: 300;
@@ -362,16 +539,17 @@ form button {
     margin-bottom: 20px;
     line-height: 65px;
 }
+
 .intro-text-2 p {
     color: #b6b9bf;
     font-size: 18px;
     line-height: 30px;
     margin-bottom: 55px;
 }
+
 .intro-text-2 .download-cta a:first-child {
     margin-left: 0px;
 }
-
 
 
 /* 06. HEADER 3 STYLES
@@ -380,6 +558,7 @@ form button {
 .intro-text-3 {
     padding: 300px 0 230px 0;
 }
+
 .intro-text-3 h1 {
     color: #fff;
     font-weight: 300;
@@ -387,18 +566,22 @@ form button {
     margin-bottom: 20px;
     line-height: 65px;
 }
+
 .intro-text-3 p {
     color: #b6b9bf;
     font-size: 18px;
     line-height: 30px;
     margin-bottom: 55px;
 }
+
 .intro-text-3 .download-cta a:first-child {
     margin-left: 0px;
 }
+
 .header-section-3 .row {
     position: relative;
 }
+
 .header-3-img {
     position: absolute;
     height: 100%;
@@ -406,11 +589,11 @@ form button {
     bottom: 0;
     left: -7%;
 }
+
 .header-3-img img {
     position: inherit;
     bottom: 0;
 }
-
 
 
 /* 07. HEADER 4 STYLES
@@ -419,35 +602,41 @@ form button {
 .header-section-4 {
     padding-top: 250px;
 }
+
 .intro-text-4 {
     margin-top: 60px;
 }
+
 .intro-text-4 h1 {
     color: #fff;
     font-weight: 300;
     font-size: 50px;
     margin-top: 50px;
 }
+
 .intro-text-4 p {
     color: #b6b9bf;
     font-size: 20px;
     line-height: 30px;
 }
+
 .header-4-img {
     padding: 0 20px;
 }
+
 .header-4-button {
     margin-top: 120px;
 }
+
 .header-4-button h4 {
     font-size: 30px;
     color: #f6f7f8;
     margin-bottom: 40px;
 }
+
 .header-4-button .download-cta a:last-child {
     margin-right: 0;
 }
-
 
 
 /* 08. 3 STEPS STYLES
@@ -456,10 +645,12 @@ form button {
 .how-works-section {
     padding: 120px 0;
 }
+
 .single-how-works {
     padding: 0 30px;
     position: relative;
 }
+
 .single-how-works:before {
     position: absolute;
     right: -28px;
@@ -467,12 +658,15 @@ form button {
     opacity: 0.2;
     content: url(../img/icons/workflow-next-icon.png);
 }
+
 .how-works-section .col-md-4:last-child .single-how-works:before {
     content: none;
 }
+
 .single-how-works i {
     font-size: 70px;
 }
+
 .single-how-works h3 {
     font-weight: 400;
     font-size: 22px;
@@ -481,12 +675,12 @@ form button {
     margin-bottom: 18px;
     margin-top: 40px;
 }
+
 .single-how-works p {
     font-size: 15px;
     color: #53565a;
     line-height: 24px;
 }
-
 
 
 /* 09. FEATURE 1 STYLES
@@ -495,9 +689,11 @@ form button {
 .feature-section-1 {
     padding: 120px 0;
 }
+
 .section-title {
     margin-bottom: 95px;
 }
+
 .section-title h2 {
     font-size: 45px;
     font-weight: 300;
@@ -505,16 +701,19 @@ form button {
     margin-bottom: 20px;
     margin-top: 0px;
 }
+
 .section-title p {
     font-size: 15px;
     font-weight: 400;
     line-height: 24px;
     color: #71757b;
 }
+
 .single-feature-1 {
     padding: 70px 50px 0px 50px;
     ;
 }
+
 .single-feature-1 i {
     padding: 27px 30px 20px;
     border-radius: 20px;
@@ -522,21 +721,23 @@ form button {
     font-size: 40px;
     line-height: 90px;
 }
+
 .single-feature-1 h3 {
     font-size: 22px;
     font-weight: 400;
     color: #000;
     margin-top: 36px;
 }
+
 .single-feature-1 p {
     font-size: 15px;
     line-height: 23px;
     color: #798394;
 }
+
 .features-1-img-container {
     padding: 0 35px;
 }
-
 
 
 /* 10. IMAGE DESCRIPTION 1 STYLES
@@ -545,12 +746,14 @@ form button {
 .image-desc-section-1 {
     padding: 90px 0;
 }
+
 .img-1-text-container h2 {
     font-size: 47px;
     line-height: 62px;
     font-weight: 300;
     margin-bottom: 30px;
 }
+
 .img-1-text-container p {
     font-size: 15px;
     color: #5d6873;
@@ -558,11 +761,11 @@ form button {
     padding-right: 80px;
     margin-bottom: 20px;
 }
+
 .img-1-container,
 .img-2-container {
     padding: 0 100px;
 }
-
 
 
 /* 11. IMAGE DESCRIPTION 2 STYLES
@@ -571,12 +774,14 @@ form button {
 .image-desc-section-2 {
     padding: 90px 0;
 }
+
 .img-2-text-container h2 {
     font-size: 47px;
     line-height: 62px;
     font-weight: 300;
     margin-bottom: 30px;
 }
+
 .img-2-text-container p {
     font-size: 15px;
     color: #5d6873;
@@ -586,32 +791,36 @@ form button {
 }
 
 
-
 /* 12. EMAIL SUBSCRIPTION STYLES
 -------------------------------------------------*/
 
 .subscribe-section {
     padding: 100px 0;
 }
+
 .subscribe-section h2 {
     font-weight: 300;
     font-size: 42px;
     margin-bottom: 50px;
     color: #f6f7f8;
 }
+
 .subscribe-section form {
     width: 505px;
     margin: auto;
 }
+
 .subscribe-section form input[type="email"] {
     width: 65%;
     border-radius: 3px;
     background: none;
     border: 1px solid #979797;
 }
+
 .subscribe-section form input[type="email"]:focus {
     color: #fff;
 }
+
 .subscribe-section form input[type="submit"] {
     border-radius: 3px;
     color: #f6f7f8;
@@ -620,6 +829,7 @@ form button {
     text-transform: uppercase;
     padding: 16px 30px;
 }
+
 .subscribe-section form .subscription-success,
 .subscribe-section form .subscription-error {
     display: none;
@@ -628,11 +838,11 @@ form button {
     color: #f6f7f8;
     margin-top: 15px;
 }
+
 .subscribe-section form .subscription-success .fa,
 .subscribe-section form .subscription-error .fa {
     margin-right: 10px
 }
-
 
 
 /* 13. SCREENSHOT GALLERY STYLES
@@ -641,10 +851,12 @@ form button {
 .screenshot-slider-1-section {
     padding: 120px 0;
 }
+
 .screen-gallery-1 {
     padding: 0 30px;
     margin-bottom: 50px
 }
+
 .screen-gallery-1 .slick-list:before,
 .screen-gallery-1 .slick-list:after {
     height: 100%;
@@ -655,15 +867,19 @@ form button {
     top: 0;
     z-index: 1;
 }
+
 .screen-gallery-1 .slick-list:before {
     left: 0;
 }
+
 .screen-gallery-1 .slick-list:after {
     right: 0;
 }
+
 .slick-slide {
     padding: 0 8px;
 }
+
 .slick-slide img {
     -webkit-transition: all .2s;
     transition: all .2s;
@@ -674,6 +890,7 @@ form button {
     border: 5px solid #dee6ee;
     border-radius: 5px;
 }
+
 .slick-slide.slick-center img {
     -webkit-transition: all .3s;
     transition: all .3s;
@@ -682,26 +899,33 @@ form button {
     opacity: 1;
     overflow: hidden;
 }
+
 .slick-slide:focus {
     outline: none;
 }
+
 .slick-next:before {
     content: url(../img/icons/next-icon.png);
 }
+
 .slick-prev:before {
     content: url(../img/icons/prev-icon.png);
 }
+
 .slick-prev {
     left: 0;
 }
+
 .slick-next {
     right: 0;
 }
+
 .slick-next,
 .slick-prev {
     height: 88px;
     width: 26px;
 }
+
 .slick-prev:before,
 .slick-next:before,
 .slick-prev:focus::before,
@@ -712,14 +936,17 @@ form button {
     -webkit-transition: all .3s;
     transition: all .3s;
 }
+
 .slick-prev:hover::before,
 .slick-next:hover::before {
     opacity: 1;
 }
+
 .slick-dots {
     bottom: -50px;
     left: 0px
 }
+
 .slick-dots li button::before {
     font-size: 5px;
     color: #263246;
@@ -728,8 +955,9 @@ form button {
 .dark-bg .slick-dots li button::before {
     color: #bec1c5;
 }
-.dark-bg .slick-dots li.slick-active button:before{
-	color: #e2dede;
+
+.dark-bg .slick-dots li.slick-active button:before {
+    color: #e2dede;
 }
 
 
@@ -739,6 +967,7 @@ form button {
 .feature-section-2 {
     padding: 120px 0;
 }
+
 .single-feature-2 {
     background: #fff;
     border-radius: 5px;
@@ -748,12 +977,15 @@ form button {
     -webkit-transition: all .3s;
     transition: all .3s;
 }
+
 .single-feature-2:hover {
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
 }
+
 .single-feature-2 i {
     font-size: 45px;
 }
+
 .single-feature-2 h3 {
     font-size: 18px;
     line-height: 30px;
@@ -763,23 +995,25 @@ form button {
 }
 
 
-
 /* 15. VIDEO POPUP STYLES
 -------------------------------------------------*/
 
 .video-conatainer {
     padding: 100px 0
 }
+
 .video-conatainer i {
     font-size: 80px;
     color: #fff;
 }
+
 .video-conatainer h3 {
     font-size: 42px;
     color: #fff;
     margin-bottom: 15px;
     font-weight: 300;
 }
+
 .video-conatainer p {
     font-size: 16px;
     color: #e2e2e2;
@@ -794,12 +1028,15 @@ form button {
 .testimonial-section {
     padding: 120px 0;
 }
+
 .tesimonial-slider .slick-prev {
     left: -100px
 }
+
 .tesimonial-slider .slick-next {
     right: -100px
 }
+
 .tesimonial-slider {
     max-width: 700px;
     text-align: center;
@@ -807,9 +1044,11 @@ form button {
     margin: 0 auto;
     padding: 40px 40px 30px 40px;
 }
+
 .tesimonial-slider .slick-slide {
     outline: none;
 }
+
 .tesimonial-slider .slick-slide p {
     font-size: 20px;
     line-height: 34px;
@@ -817,12 +1056,14 @@ form button {
     margin-bottom: 40px;
     color: #000;
 }
+
 .tesimonial-slider .slick-slide h4 {
     font-size: 22px;
     font-weight: 400;
     margin-bottom: 0;
     color: #263246;
 }
+
 .tesimonial-slider .slick-slide h5 {
     font-size: 12px;
     font-weight: 400;
@@ -830,17 +1071,21 @@ form button {
     margin-bottom: 0;
     margin-top: 5px;
 }
+
 .testimonial-thumbs {
     width: 550px;
     margin: 0 auto;
 }
-.testimonial-thumbs > div {
+
+.testimonial-thumbs>div {
     margin-bottom: -10px;
 }
+
 .testimonial-thumbs .slick-slide {
     outline: none;
     padding: 20px 0;
 }
+
 .testimonial-thumbs .slick-slide img {
     height: 80px;
     width: 80px;
@@ -855,6 +1100,7 @@ form button {
     overflow: visible;
     opacity: 0.5;
 }
+
 .testimonial-thumbs .slick-current img {
     height: 72px;
     margin-top: 0;
@@ -866,45 +1112,52 @@ form button {
 }
 
 
-
 /* 17. PRICES SECTION STYLES
 -------------------------------------------------*/
 
 .price-section {
     padding: 120px 0;
 }
+
 .single-price {
     background: #fff;
     border-radius: 50%;
     padding: 30px;
 }
+
 .plan-title {
     font-size: 20px;
     font-weight: 400;
     color: #263246;
     margin-top: 10px;
 }
+
 .plan-price {
     padding: 10px 0;
 }
+
 .plan-price h4 {
     font-size: 100px;
     font-weight: 300;
     color: #263246;
     letter-spacing: -10px;
 }
+
 .plan-price h4 i {
     font-size: 25px;
     letter-spacing: 0px;
 }
+
 .plan-price h4 span {
     font-size: 30px;
     letter-spacing: 0px;
 }
+
 .single-price p {
     color: #5d6873;
     margin: 10px 0 20px 0;
 }
+
 .single-price button {
     color: #5d5e5f;
     background-color: #dee6ee;
@@ -915,16 +1168,18 @@ form button {
     font-size: 14px;
     border-radius: 3px;
 }
+
 .single-price button:hover {
     color: #fff;
 }
+
 .single-price button:focus {
     outline: none
 }
+
 .featured-price.single-price button {
     color: #fff;
 }
-
 
 
 /* 18. DOWNLOAD SECTION STYLES
@@ -933,20 +1188,23 @@ form button {
 .download-section {
     padding: 100px 0;
 }
+
 .download-conatainer h2 {
     font-size: 45px;
     color: #f6f7f8;
     font-weight: 300;
     margin-bottom: 20px;
 }
+
 .download-conatainer h5 {
     color: #b5c0d1;
     font-size: 18px;
     font-weight: 400;
     margin-bottom: 70px;
 }
-.download-conatainer{
-	margin-bottom:20px;
+
+.download-conatainer {
+    margin-bottom: 20px;
 }
 
 
@@ -956,16 +1214,19 @@ form button {
 .contact-form-section {
     padding: 120px 0;
 }
+
 form.contact-form .success,
 form.contact-form .error {
     display: none;
     font-size: 14px;
     font-weight: 400;
 }
+
 form.contact-form .success i,
 form.contact-form .error i {
     margin-right: 10px;
 }
+
 form.contact-form input[type="text"],
 form.contact-form input[type="email"],
 form.contact-form textarea {
@@ -982,15 +1243,18 @@ form.contact-form textarea {
     font-size: 14px;
     color: #747a7f;
 }
+
 form.contact-form input[type="text"]:focus,
 form.contact-form input[type="email"]:focus,
 form.contact-form textarea:focus {
     color: #263246;
 }
+
 form.contact-form textarea {
     resize: none;
     max-height: 140px;
 }
+
 form.contact-form button {
     border-radius: 3px;
     color: #f6f7f8;
@@ -1000,6 +1264,7 @@ form.contact-form button {
     font-size: 15px;
     width: auto;
 }
+
 form.contact-form button:hover,
 form.contact-form button:focus {
     background: #263246;
@@ -1009,7 +1274,6 @@ form.contact-form button:focus {
 }
 
 
-
 /* 20. FOOTER STYLES
 -------------------------------------------------*/
 
@@ -1017,32 +1281,38 @@ form.contact-form button:focus {
     background: #191c21;
     padding-top: 110px;
 }
+
 .footer-container {
     margin-bottom: 70px;
 }
+
 .footer-container .social-icons {
     margin-top: 90px;
 }
+
 .footer-container .social-icons li {
     display: inline-block;
 }
+
 .footer-container .social-icons li a {
     color: #f6f7f8;
     font-size: 24px;
     margin: 0 27px
 }
+
 .copyright {
     border-top: 1px solid #2c3242;
     padding: 25px 0;
 }
+
 .copyright p {
     font-size: 14px;
     color: #8a95a8;
 }
+
 .copyright p a {
     color: #a2aab8;
 }
-
 
 
 /* 21. DARK VARIATIONS STYLES
@@ -1051,90 +1321,115 @@ form.contact-form button:focus {
 .dark-bg {
     background: #15171b;
 }
+
 .dark-gry-bg {
     background: #191c21
 }
+
 .navbar-fixed-top.dark-bg {
     background: transparent;
 }
+
 .dark-bg.scroll-fixed-nav {
     background-color: rgba(21, 23, 27, 0.95);
     -moz-box-shadow: 0 2px 8px 0 rgba(21, 23, 27, 0.1);
     -webkit-box-shadow: 0 2px 8px 0 rgba(21, 23, 27, 0.1);
     box-shadow: 0 2px 8px 0 rgba(21, 23, 27, 0.1);
 }
+
 .dark-bg.scroll-nav .logo-black {
     display: none !important;
 }
+
 .dark-bg.scroll-fixed-nav .logo-white {
     display: block !important;
 }
-.dark-bg.scroll-fixed-nav .navbar-nav > li > a {
+
+.dark-bg.scroll-fixed-nav .navbar-nav>li>a {
     color: #f6f7f8 !important;
 }
+
 .dark-bg .section-title h2,
 .dark-gry-bg .section-title h2 {
     color: #f6f7f1;
 }
+
 .dark-gry-bg .single-how-works h3 {
     color: #f6f7f8;
 }
+
 .dark-gry-bg .single-how-works:before {
     opacity: 0.4;
 }
+
 .dark-bg .single-feature-1 i {
     background: #252c3c;
 }
+
 .dark-bg .single-feature-1 h3 {
     color: #f6f7f8;
 }
+
 .dark-gry-bg .img-1-text-container p,
 .dark-bg .img-2-text-container p {
     color: #b3b3b3;
 }
+
 .dark-bg .screen-gallery-1 .slick-list:before,
 .dark-bg .screen-gallery-1 .slick-list:after {
     background: #15171b;
 }
+
 .dark-bg .slick-slide img {
     border-color: #474f56;
 }
+
 .dark-gry-bg .single-feature-2 {
     background: #15171b;
 }
+
 .dark-gry-bg .single-feature-2 h3 {
     color: #f6f7f8;
 }
+
 .dark-gry-bg .single-feature-2:hover {
     box-shadow: 0 0 15px rgba(20, 22, 26, 0.3);
 }
+
 .dark-bg .tesimonial-slider .slick-slide p,
 .dark-bg .tesimonial-slider .slick-slide h4 {
     color: #f6f7f8;
 }
+
 .dark-gry-bg .single-price {
     background: #15171b;
 }
+
 .dark-gry-bg .plan-title {
     color: #f6f7f8;
 }
+
 .dark-gry-bg .plan-price h4 {
     color: #f6f7f8;
 }
+
 .dark-gry-bg .single-price button {
     color: #f5f6f7;
     background-color: #303742;
     border-color: #303742;
 }
+
 .dark-gry-bg .single-price button:hover {
     color: #fff;
 }
+
 .dark-bg form.contact-form input[type="text"],
 .dark-bg form.contact-form input[type="email"],
 .dark-bg form.contact-form textarea {
     background: #191c21;
     border: 1px solid #212329;
 }
+
 .dark-bg form.contact-form .success,
 .dark-bg form.contact-form .error,
 .dark-bg form.contact-form input[type="text"]:focus,
@@ -1142,7 +1437,6 @@ form.contact-form button:focus {
 .dark-bg form.contact-form textarea:focus {
     color: #f6f7f8;
 }
-
 
 
 /* 22. DIFFERENT HEADER BACKGROUND STYLES
@@ -1155,9 +1449,11 @@ form.contact-form button:focus {
     background-repeat: no-repeat;
     background-position: center center;
 }
+
 .header-solid-bg {
     background: #0F5B5E;
 }
+
 .header-gradient-bg {
     background: rgba(0, 51, 102, 1);
     background: -moz-linear-gradient(top, rgba(0, 51, 102, 1) 0%, rgba(0, 51, 51, 1) 100%);
@@ -1168,6 +1464,7 @@ form.contact-form button:focus {
     background: linear-gradient(to bottom, rgba(0, 51, 102, 1) 0%, rgba(0, 51, 51, 1) 100%);
     filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#003366', endColorstr='#003333', GradientType=0);
 }
+
 #youtube-bg {
     position: fixed;
     top: 0;
@@ -1181,6 +1478,7 @@ form.contact-form button:focus {
     background-repeat: no-repeat;
     background-position: center center;
 }
+
 #youtube-bg:after {
     position: absolute;
     top: 0;
