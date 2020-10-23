@@ -1,0 +1,69 @@
+
+.dot1,
+.dot2 {
+    background-color: #f0504c;
+}
+.btn-2-play-store:hover,
+.btn-2-app-store:hover {
+    background: #f0504c;
+    border: 2px solid #f0504c;
+}
+.nav a:hover,
+.scroll-fixed-nav .nav a:hover,
+#nav .current > a {
+    color: #f0504c !important
+}
+.single-how-works i {
+    color: #f0504c;
+}
+.single-feature-1 i {
+    color: #f0504c;
+}
+.img-1-text-container h2 {
+    color: #f0504c;
+}
+.img-2-text-container h2 {
+    color: #f0504c;
+}
+.subscribe-section form input[type="email"]:focus {
+    border: 1px solid #f0504c;
+}
+.subscribe-section form input[type="submit"] {
+    background: #f0504c;
+}
+.single-feature-2 i {
+    color: #f0504c;
+}
+.featured-price.single-price button {
+    background-color: #f0504c;
+    border-color: #f0504c;
+}
+.featured-price .plan-price h4 {
+    color: #f0504c;
+}
+.featured-price.single-price button:hover {
+    background-color: #f0504c;
+    border-color: #f0504c;
+}
+.single-price button:hover {
+    background-color: #f0504c;
+    border-color: #f0504c;
+}
+.dark-gry-bg .single-price button:hover {
+    background-color: #f0504c;
+    border-color: #f0504c;
+}
+form.contact-form input[type="text"]:focus,
+form.contact-form input[type="email"]:focus,
+form.contact-form textarea:focus {
+    border: 1px solid #f0504c;
+}
+form.contact-form button {
+    background: #f0504c;
+}
+.footer-container .social-icons li a:hover {
+    color: #f0504c;
+}
+#scrollUp:hover {
+    background-color: #f0504c;
+}
