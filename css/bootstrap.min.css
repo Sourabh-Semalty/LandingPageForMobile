@@ -5393,7 +5393,6 @@ textarea.input-group-sm>.input-group-btn>.btn {
 
 .navbar-default {
     background-color: #f8f8f8;
-    border-color: #e7e7e7
 }
 
 .navbar-default .navbar-brand {
@@ -5444,12 +5443,7 @@ textarea.input-group-sm>.input-group-btn>.btn {
 }
 
 .navbar-default .navbar-toggle .icon-bar {
-    background-color: #888
-}
-
-.navbar-default .navbar-collapse,
-.navbar-default .navbar-form {
-    border-color: #e7e7e7
+    background-color: #888;
 }
 
 .navbar-default .navbar-nav>.open>a,
