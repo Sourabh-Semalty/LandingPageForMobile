@@ -48,6 +48,7 @@ ul li {
 .flex-container {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 .flex-container .box {
