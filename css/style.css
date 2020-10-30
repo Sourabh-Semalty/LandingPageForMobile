@@ -7,7 +7,6 @@ body {
     font-family: 'Lato', sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    background: #191c21;
     overflow-x: hidden;
 }
 
@@ -35,6 +34,21 @@ ul li {
 .counter-icons {
     font-size: 32px;
     color: #f0504c
+}
+
+
+/*  ? media query  */
+
+@media(max-width:992px) {
+    .intro-text-2 {
+        margin-top: 4rem !important;
+    }
+}
+
+@media(max-width:692px) {
+    .intro-text-2 {
+        margin-top: 1rem !important;
+    }
 }
 
 
@@ -647,7 +661,7 @@ form button {
     position: absolute;
     right: -28px;
     top: 50px;
-    opacity: 0.2;
+    opacity: 0;
     content: url(../img/icons/workflow-next-icon.png);
 }
 

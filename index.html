@@ -6,7 +6,11 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
 
     <title>Learning</title>
-
+    <style>
+        * {
+            overflow-x: hidden;
+        }
+    </style>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/font-awesome.min.css" />
@@ -25,7 +29,10 @@
     <link rel="stylesheet" href="css/colors/5.css" title="color-5" />
     <link rel="stylesheet" href="css/colors/6.css" title="color-6" />
     <link rel="stylesheet" href="css/colors/7.css" title="color-7" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;1,500;1,600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
     <!-- <link rel="stylesheet" href="../demo/css/demo.css" /> -->
 </head>
 
@@ -82,19 +89,25 @@
         <div class="container">
             <div class="row v-align-children">
                 <div class="col-md-7 col-sm-12">
+
                     <!-- HEADING TEXT -->
-                    <div class="intro-text-2">
-                        <h1>World's Best learning Community</h1>
-                        <p>
-                            "Maximize returns on inverstment for your time" . Spend your time wisely. Learn a new skill. Hone up your existing skills
+                    <div class="intro-text-2" style="margin-top: -10rem;">
+                        <h1 style="font-weight: bolder;">World's Best learning Community</h1>
+                        <p style="font-family: 'Poppins', sans-serif; font-size: 16px; margin: 0">
+                            "What would you like to Learn Today ? " . Spend your time wisely.
                         </p>
+                        <ul class="text-danger" style="font-family: sans-serif; color:white; margin-left: 2rem;">
+                            <li class="h3" style="list-style: disc;">Learn a new skill</li>
+                            <li class="h3" style="list-style: disc;">Sharpen your existing skills</li>
+                            <li class="h3" style="list-style: disc;">Maximize returns on inverstment of your time</li>
+                        </ul>
                         <!-- BUTTON -->
                         <div class="download-cta">
                             <a href="#" class="btn btn-play-store"><i class="fa fa-android"></i>
                   <span class="small">Get it on</span>
                   <span class="big">Google Play</span></a
                 >
-                <a href="#" class="btn btn-app-store"
+                <a style="margin:1rem 0rem" href="#" class="btn btn-app-store my-2"
                   ><i class="fa fa-apple"></i>
                   <span class="small">Download on the</span>
                   <span class="big">App Store</span></a
@@ -120,11 +133,11 @@
           <div class="col-md-12">
             <!-- SECTION TITLE -->
             <div class="section-title text-center">
-              <h2>Simple 3 Steps</h2>
-              <blockquote class="blockquote text-center">
+              <h2 style="font-weight:bold">Our Features</h2>
+              <blockquote class="blockquote text-center" style="border:none">
                 <p class="mb-0">
                   "Knowledge increases by sharing" . Create short videos and
-                  share your knowledge with the world. Build your own followre's
+                  share your knowledge with the world. Build your own follower's
                   network. Spread your knowledge.
                 </p>
               </blockquote>
@@ -132,7 +145,7 @@
           </div>
         </div>
 
-        <div class="row">
+        <div class="row" style="margin-top: 1rem;">
           <div class="col-md-4">
             <!-- 1ST STEP -->
             <div
@@ -140,12 +153,10 @@
               data-wow-offset="10"
               data-wow-duration="1.5s"
             >
-              <i class="icon-basic-mail-open-text"></i>
-              <h3>Podcasts</h3>
+            <i class="fa fa-graduation-cap" aria-hidden="true"></i>
+              <h3>Learn</h3>
               <p>
-                "For the Busy bees." Nourish your mind by listening to podcast
-                while doing other things at home or at work, during your commute
-                or at leisure.
+                100+ curated videos to suit your hunger and passion forf learning.
               </p>
             </div>
           </div>
@@ -157,12 +168,10 @@
               data-wow-duration="1.5s"
               data-wow-delay=".3s"
             >
-              <i class="icon-basic-webpage-txt"></i>
-              <h3>Share your Watchlist</h3>
+            <i class="fa fa-share-alt" aria-hidden="true"></i>
+              <h3>Create and Share</h3>
               <p>
-                "Learn together Grow together". Let your friends know your
-                current interests and favorites. Use the power and reach of
-                social networking to explore mutual interests.
+                Create your own videos using our versatile filters and share with the world.
               </p>
             </div>
           </div>
@@ -174,13 +183,61 @@
               data-wow-duration="1.5s"
               data-wow-delay=".5s"
             >
-              <i class="icon-ecommerce-basket-download"></i>
+            <i class="fa fa-television" aria-hidden="true"></i>
+              <h3>Share your stories</h3>
+              <p>
+                Stories are a fun way to share what's going on.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="row" style="margin-top:4rem">
+          <div class="col-md-4">
+            <!-- 1ST STEP -->
+            <div
+              class="single-how-works text-center wow fadeInLeft"
+              data-wow-offset="10"
+              data-wow-duration="1.5s"
+            >
+            <i class="fa fa-podcast" aria-hidden="true"></i>
+              <h3>Podcasts</h3>
+              <p>
+                "For the <mark><b>Busy bees</b></mark>." <br>Nourish your mind by listening to podcast
+                while doing other things at home or at work, during your commute
+                or at leisure.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <!-- 3RD STEP -->
+            <div
+              class="single-how-works text-center wow fadeInLeft"
+              data-wow-offset="10"
+              data-wow-duration="1.5s"
+              data-wow-delay=".5s"
+            >
+            <i class="fa fa-trophy" aria-hidden="true"></i>
               <h3>Earn Rewards Points</h3>
               <p>
                 "Earn While your learn" . Collect reward points by sharing
                 videos and Podcasts, receiving likes, watching videos and
                 referring friends. Redeem the points for exciting gifts and
                 memberships.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <!-- 2ND STEP -->
+            <div
+              class="single-how-works text-center wow fadeInLeft"
+              data-wow-offset="10"
+              data-wow-duration="1.5s"
+              data-wow-delay=".3s"
+            >
+            <i class="fa fa-clock-o" aria-hidden="true"></i>
+              <h3>Share your Watchlist</h3>
+              <p>
+                Learn together Grow together. 
               </p>
             </div>
           </div>
@@ -196,7 +253,7 @@
           <div class="col-md-12">
             <!-- SECTION TITLE -->
             <div class="section-title text-center">
-              <h2>Have a Close View</h2>
+              <h2 style="font-weight: bold;">Have a Close View</h2>
             </div>
           </div>
         </div>
@@ -206,8 +263,8 @@
             <!-- SINGLE FEATURE STYLE 1 -->
             <div class="single-feature-1 text-center">
               <i class="icon-basic-rss"></i>
-              <h3>Responsive Media</h3>
-              <p>Broadcast your posts and use mike icon</p>
+              <h3>Public/ Private Watchlist</h3>
+              <p>Have feature of making your things private and public</p>
             </div>
 
             <!-- SINGLE FEATURE STYLE 1 -->
@@ -240,8 +297,8 @@
             <!-- SINGLE FEATURE STYLE 1 -->
             <div class="single-feature-1 text-center">
               <i class="icon-basic-picture-multiple"></i>
-              <h3>2 Icon set</h3>
-              <p>Unlimited videos and use video icon</p>
+              <h3>Autoplay button</h3>
+              <p>Play the video on Same Topic you are In</p>
             </div>
           </div>
         </div>
@@ -255,7 +312,7 @@
         <div class="col-md-12">
           <!-- SECTION TITLE -->
           <div class="section-title text-center">
-            <h2>Our Members</h2>
+            <h2 style="font-weight: bold;">Our Members</h2>
           </div>
         </div>
       </div>
@@ -284,118 +341,180 @@
     <footer class="footer-section">
       <div class="container">
         <div class="row">
-          <div class="col-md-12">
-            <div class="footer-container text-center">
-              <!-- SOCIAL ICONS  -->
-              <ul class="social-icons">
-                <li>
-                  <a href="#"><i class="fa fa-facebook"></i></a>
-                            </li>
-                            <li>
-                                <a href="#"><i class="fa fa-twitter"></i></a>
-                            </li>
-                            <li>
-                                <a href="#"><i class="fa fa-dribbble"></i></a>
-                            </li>
-                            <li>
-                                <a href="#"><i class="fa fa-linkedin"></i></a>
-                            </li>
-                            <li>
-                                <a href="#"><i class="fa fa-google-plus"></i></a>
-                            </li>
+          <div class="col-lg-4">
+            <div class="contact_info">
+                <h1 class="font-weight-bold" style="color: white">Bussiness Enquires</h1>
+                <p class="display-4" style="color:#eee">Kindly Put your queries here we will revert back to you ASAP!.....</p>
+            </div>
+          </div>
+          <div class="col-lg-8">
+              <form class="row contact_form" action="contact_process.php" method="post" id="contactForm" novalidate="novalidate">
+                  <div class="col-md-6">
+                      <div class="form-group">
+                          <input type="text" class="form-control" id="name" name="name" placeholder="Enter your name" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter your name'" required="">
+                      </div>
+                      <div class="form-group">
+                          <input type="email" class="form-control" id="email" name="email" placeholder="Enter email address" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter email address'" required="">
+                      </div>
+                      <div class="form-group">
+                          <input type="text" class="form-control" id="subject" name="subject" placeholder="Enter Subject" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter Subject'" required="">
+                      </div>
+                  </div>
+                  <div class="col-md-6">
+                      <div class="form-group">
+                          <textarea class="form-control" cols="30" rows="8"  name="message" id="message" rows="1" placeholder="Enter Message" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter Message'" required=""></textarea>
+                      </div>
+                  </div>
+                  <div class="col-md-12 text-right">
+                      <button type="submit" value="submit" class="btn primary-danger">Send Message</button>
+                  </div>
+              </form>
+          </div>
+        </div>
+        <div class="row" style="margin-top: 2rem">
+          <div class="col-lg-3 col-md-6 single-footer-widget">
+            <h4 class="h3" style="color:#eee">Learning Features</h4>
+            <ul>
+              <li><a href="#">What people Say</a></li>
+                            <li><a href="#">Press</a></li>
+                            <li><a href="#">Terms</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-3 col-md-6 single-footer-widget">
+                            <h4 class="h3" style="color:#eee">About</h4>
+                            <ul>
+                                <li><a href="#">Careers</a></li>
+                                <li><a href="#">Get in Touch</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-3 col-md-6 single-footer-widget">
+                            <h4 class="h3" style="color:#eee">Download</h4>
+                            <ul>
+                                <li><a href="#">Android</a></li>
+                                <li><a href="#">iphone</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-3 col-md-6 single-footer-widget">
+                            <h4 class="h3" style="color:#eee">Help</h4>
+                            <ul>
+                                <li><a href="#">FAQ</a></li>
+                                <li><a href="#">How we work</a></li>
+                                <li><a href="#">Bussiness Enquires</a></li>
                             </ul>
                         </div>
                     </div>
-                </div>
-
-                <div class="row copyright text-center">
-                    <div class="col-md-12">
-                        <p>
-                            &copy; 2020 Learning</a> All Rights Reserved.
-                        </p>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="footer-container text-center">
+                                <!-- SOCIAL ICONS  -->
+                                <ul class="social-icons">
+                                    <li>
+                                        <a href="#"><i class="fa fa-facebook"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><i class="fa fa-twitter"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><i class="fa fa-dribbble"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><i class="fa fa-linkedin"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><i class="fa fa-google-plus"></i></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row copyright text-center">
+                        <div class="col-md-12">
+                            <p>
+                                &copy; 2020 Learning</a> All Rights Reserved.
+                            </p>
+                        </div>
                     </div>
                 </div>
-            </div>
-            </footer>
-            <!-- END FOOTER -->
+                </footer>
+                <!-- END FOOTER -->
 
-            <!--  SCRIPTS  -->
+                <!--  SCRIPTS  -->
 
-            <script src="js/vendor/jquery.min.js"></script>
+                <script src="js/vendor/jquery.min.js"></script>
 
-            <script src="js/vendor/modernizr.custom.js"></script>
+                <script src="js/vendor/modernizr.custom.js"></script>
 
-            <script src="js/bootstrap.min.js"></script>
+                <script src="js/bootstrap.min.js"></script>
 
-            <script src="js/jquery.magnific-popup.min.js"></script>
+                <script src="js/jquery.magnific-popup.min.js"></script>
 
-            <script src="js/parallax.min.js"></script>
+                <script src="js/parallax.min.js"></script>
 
-            <script src="js/jquery.ajaxchimp.min.js"></script>
+                <script src="js/jquery.ajaxchimp.min.js"></script>
 
-            <script src="js/jquery.nav.js"></script>
+                <script src="js/jquery.nav.js"></script>
 
-            <script src="js/jquery.youtubebackground.js"></script>
+                <script src="js/jquery.youtubebackground.js"></script>
 
-            <script src="js/slick.min.js"></script>
+                <script src="js/slick.min.js"></script>
 
-            <script src="js/jquery.scrollUp.min.js"></script>
+                <script src="js/jquery.scrollUp.min.js"></script>
 
-            <script src="js/retina.js"></script>
+                <script src="js/retina.js"></script>
 
-            <script src="js/wow.min.js"></script>
-            <script src="js/self.js"></script>
-            <script src="js/scripts.js"></script>
-            <!-- <script type="text/javascript" src="../demo/js/styleswitcher.js"></script> -->
-            <!-- <script type="text/javascript" src="../demo/js/demo.js"></script> -->
+                <script src="js/wow.min.js"></script>
+                <script src="js/self.js"></script>
+                <script src="js/scripts.js"></script>
+                <!-- <script type="text/javascript" src="../demo/js/styleswitcher.js"></script> -->
+                <!-- <script type="text/javascript" src="../demo/js/demo.js"></script> -->
 
-            <div class="appa-style-switch" id="switch-style">
-                <div class="switched-options">
-                    <ul class="styles">
-                        <li>
-                            <a href="#" onclick="setActiveStyleSheet('color-1'); return false;" title="color-1">
-                                <div class="color-1"></div>
-                            </a>
-                        </li>
+                <div class="appa-style-switch" id="switch-style">
+                    <div class="switched-options">
+                        <ul class="styles">
+                            <li>
+                                <a href="#" onclick="setActiveStyleSheet('color-1'); return false;" title="color-1">
+                                    <div class="color-1"></div>
+                                </a>
+                            </li>
 
-                        <li>
-                            <a href="#" onclick="setActiveStyleSheet('color-2'); return false;" title="color-2">
-                                <div class="color-2"></div>
-                            </a>
-                        </li>
+                            <li>
+                                <a href="#" onclick="setActiveStyleSheet('color-2'); return false;" title="color-2">
+                                    <div class="color-2"></div>
+                                </a>
+                            </li>
 
-                        <li>
-                            <a href="#" onclick="setActiveStyleSheet('color-3'); return false;" title="color-3">
-                                <div class="color-3"></div>
-                            </a>
-                        </li>
+                            <li>
+                                <a href="#" onclick="setActiveStyleSheet('color-3'); return false;" title="color-3">
+                                    <div class="color-3"></div>
+                                </a>
+                            </li>
 
-                        <li>
-                            <a href="#" onclick="setActiveStyleSheet('color-4'); return false;" title="color-4">
-                                <div class="color-4"></div>
-                            </a>
-                        </li>
+                            <li>
+                                <a href="#" onclick="setActiveStyleSheet('color-4'); return false;" title="color-4">
+                                    <div class="color-4"></div>
+                                </a>
+                            </li>
 
-                        <li>
-                            <a href="#" onclick="setActiveStyleSheet('color-5'); return false;" title="color-5">
-                                <div class="color-5"></div>
-                            </a>
-                        </li>
+                            <li>
+                                <a href="#" onclick="setActiveStyleSheet('color-5'); return false;" title="color-5">
+                                    <div class="color-5"></div>
+                                </a>
+                            </li>
 
-                        <li>
-                            <a href="#" onclick="setActiveStyleSheet('color-6'); return false;" title="color-6">
-                                <div class="color-6"></div>
-                            </a>
-                        </li>
+                            <li>
+                                <a href="#" onclick="setActiveStyleSheet('color-6'); return false;" title="color-6">
+                                    <div class="color-6"></div>
+                                </a>
+                            </li>
 
-                        <li>
-                            <a href="#" onclick="setActiveStyleSheet('color-7'); return false;" title="color-7">
-                                <div class="color-7"></div>
-                            </a>
-                        </li>
-                    </ul>
+                            <li>
+                                <a href="#" onclick="setActiveStyleSheet('color-7'); return false;" title="color-7">
+                                    <div class="color-7"></div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-            </div>
 
 </body>
 
