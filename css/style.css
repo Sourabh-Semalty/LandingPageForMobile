@@ -40,13 +40,16 @@ ul li {
 /*  ? media query  */
 
 @media(max-width:992px) {
-    .intro-text-2 {
+    .first-face {
         margin-top: 4rem !important;
+    }
+    .intro-text-2 {
+        margin-top: -3rem !important;
     }
 }
 
 @media(max-width:692px) {
-    .intro-text-2 {
+    .first-face {
         margin-top: 1rem !important;
     }
 }
