@@ -52,6 +52,18 @@ ul li {
     .first-face {
         margin-top: 1rem !important;
     }
+    .intro-text-2 h1 {
+        font-size: 32px !important;
+    }
+    .intro-text-2 p {
+        font-size: 13px !important;
+    }
+    .featurelist {
+        text-align: left;
+    }
+    .featurelist li {
+        font-size: 18px;
+    }
 }
 
 
@@ -489,6 +501,9 @@ form button {
 @media(max-width: 768px) {
     .mt-n5 {
         margin-top: 1rem;
+    }
+    .featurelist li {
+        list-style: none !important;
     }
 }
 
